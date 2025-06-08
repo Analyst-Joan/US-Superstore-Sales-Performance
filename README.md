@@ -137,7 +137,7 @@ VAR Targetdiff = [Target profit Margin] - [Profit Margin]
 RETURN
 IF(Targetdiff<0,0,Targetdiff)
 ```
-Other Measures created to enhance visualiztion of the metrics:
+Other Measures created to enhance visualization of the metrics:
 ```
 Profit margin Vs Target profit Margin = 
 VAR _Value = FORMAT(DIVIDE([Profit Margin],[Target profit Margin]),"0.0%")
@@ -170,7 +170,7 @@ With the measures for the metrics computed, it’s time to bring our analysis to
 ## KPI Visualization/Presentation (WIP)
 
 ## Dashboard:
-Having analyzed and visualized the required KPIs, [the interactive dashboard](https://app.powerbi.com/view?r=eyJrIjoiOWM0NjgzYzYtZTU1OS00M2QwLTk0NjUtZjE1Mjg0YTdlOTRkIiwidCI6ImFiMTA0YzYwLTZkZTYtNDc1ZC1hMjBmLTg5M2Y2OWQ2NzlhNCJ9), with Image shown below, was then designed with slicers, tooltips and bookmarks to enable the business user drill down and gain additional insights from the report. A brief video guide of the dashboard can also be accessed through this [link](https://drive.google.com/file/d/1ksyEqHmqp5qyN-NQhzaSSTBv6_M0o5_f/view?usp=sharing)
+Having analyzed and visualized the required KPIs, [the interactive dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTdjYzYzZmYtMjMwYS00OTgyLThjMTktZGIwNjA2MGVjOTQxIiwidCI6ImFiMTA0YzYwLTZkZTYtNDc1ZC1hMjBmLTg5M2Y2OWQ2NzlhNCJ9&embedImagePlaceholder=true&pageName=3ab929e1f4888cf87d7b), with Image shown below, was then designed with slicers, tooltips and bookmarks to enable the business user drill down and gain additional insights from the report. A brief video guide of the dashboard can also be accessed through this [link](https://lnkd.in/dyK2JhFX)
 
 ![](Maketing_campaign_dashboard.JPG)
 
