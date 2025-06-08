@@ -10,18 +10,16 @@ As a Business Manager for a fictitious United States based Superstore, I conduct
 ## Target Audience
 This project is designed to provide value to a range of business and data professionals. The insights and visualizations generated are relevant for decision-making, performance monitoring, and strategic planning across various roles:
 
-🏢 1. Business Stakeholders (Sales Managers, Regional Managers, Product/Category Managers)
-Why it matters: Enables them to identify underperforming products, loss-making states, and profit drivers, guiding actionable improvements in pricing, inventory, and regional sales strategies.
-📊 2. Data & Business Analysts
-Includes: Data Analysts, Business Intelligence Analysts, CX Analysts
-Why it matters: Offers a case study in effective exploratory data analysis, visual storytelling, and deriving business-relevant insights from retail data, valuable for benchmarking and learning.
+**1. Business Stakeholders** (Sales Managers, Regional Managers, Product/Category Managers)
+_Why it matters:_ Enables them to identify underperforming products, loss-making states, and profit drivers, guiding actionable improvements in pricing, inventory, and regional sales strategies.
 
-🧑‍💼 3. Executives & Strategy Teams
-Includes: C-level Executives (e.g., CRO, COO), Strategic Planners
-Why it matters: Provides high-level KPIs and performance breakdowns to support strategic decisions on market focus, product investment, and profitability optimization.
+**2. Data & Business Analysts** (Data Analysts, Business Intelligence Analysts, CX Analysts)
+_Why it matters:_ Offers a case study in effective exploratory data analysis, visual storytelling, and deriving business-relevant insights from retail data, valuable for benchmarking and learning.
 
-🎓 4. Aspiring Data Professionals
-Includes: Junior Analysts, Students, Career Switchers
+**3. Executives & Strategy Teams** (C-level Executives (e.g., CRO, COO), Strategic Planners)
+_Why it matters:_ Provides high-level KPIs and performance breakdowns to support strategic decisions on market focus, product investment, and profitability optimization.
+
+**4. Aspiring Data Professionals** (Junior Analysts, Students, Career Switchers)
 Why it matters: Serves as a learning tool for how to conduct and present impactful EDA in a business context, with real-world relevance and dashboard design best practices.
 
 ## Business Need Addressed
@@ -54,6 +52,18 @@ The insights from this EDA serve strategic, operational, and tactical needs as o
 **7. Support Data-Driven Decision-Making**
 - Provide actionable insights to guide pricing, inventory, regional targeting, and logistics.
 - Empower business managers to optimize strategies for profitability and growth.
+
+ ## Key Questions Answered
+1. What are the overall sales and profit figures?
+2. Which segments and product categories drive or drag performance?
+3. Which states or cities are underperforming or excelling?
+4. How do product sub-categories differ in terms of sales and profit?
+5. What are the risks of discounting or over-ordering on profitability?
+6. Which shipping modes affect cost efficiency?
+7. Which customer segment + shipping method combinations reduce profitability?
+8. What are the most and least profitable products?
+9. Where are we losing money despite high product movement?
+10. How can shipping and pricing strategies be optimized by region or segment?
 
 ## Skills/Concepts applied
 -	Cleaning/Validation in Power Query
