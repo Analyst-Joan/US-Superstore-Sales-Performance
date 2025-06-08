@@ -1,6 +1,6 @@
 # US-Superstore-Sales-Performance - Exploring Profitability Across Products, Segments & Regions
 
-![Store Image](products.jpeg)
+![Store Image](products.png)
 
 [Photo Credit](https://create.microsoft.com/en-us/features/ai-image-generator)
 
