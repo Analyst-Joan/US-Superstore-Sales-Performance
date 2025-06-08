@@ -11,16 +11,16 @@ As a Business Manager for a fictitious United States based Superstore, I conduct
 This project is designed to provide value to a range of business and data professionals. The insights and visualizations generated are relevant for decision-making, performance monitoring, and strategic planning across various roles:
 
 **1. Business Stakeholders** (Sales Managers, Regional Managers, Product/Category Managers)
-_Why it matters:_ Enables them to identify underperforming products, loss-making states, and profit drivers, guiding actionable improvements in pricing, inventory, and regional sales strategies.
+- Why it matters: Enables them to identify underperforming products, loss-making states, and profit drivers, guiding actionable improvements in pricing, inventory, and regional sales strategies.
 
 **2. Data & Business Analysts** (Data Analysts, Business Intelligence Analysts, CX Analysts)
-_Why it matters:_ Offers a case study in effective exploratory data analysis, visual storytelling, and deriving business-relevant insights from retail data, valuable for benchmarking and learning.
+- Why it matters: Offers a case study in effective exploratory data analysis, visual storytelling, and deriving business-relevant insights from retail data, valuable for benchmarking and learning.
 
 **3. Executives & Strategy Teams** (C-level Executives (e.g., CRO, COO), Strategic Planners)
-_Why it matters:_ Provides high-level KPIs and performance breakdowns to support strategic decisions on market focus, product investment, and profitability optimization.
+- Why it matters: Provides high-level KPIs and performance breakdowns to support strategic decisions on market focus, product investment, and profitability optimization.
 
 **4. Aspiring Data Professionals** (Junior Analysts, Students, Career Switchers)
-Why it matters: Serves as a learning tool for how to conduct and present impactful EDA in a business context, with real-world relevance and dashboard design best practices.
+- Why it matters: Serves as a learning tool for how to conduct and present impactful EDA in a business context, with real-world relevance and dashboard design best practices.
 
 ## Business Need Addressed
 The insights from this EDA serve strategic, operational, and tactical needs as outlined below:
