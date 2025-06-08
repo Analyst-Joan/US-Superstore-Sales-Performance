@@ -1,6 +1,6 @@
 # US-Superstore-Sales-Performance - Exploring Profitability Across Products, Segments & Regions
 
-![Store Image](products.png)
+![Store Image](Product_cover.png)
 
 [Photo Credit](https://create.microsoft.com/en-us/features/ai-image-generator)
 
@@ -81,14 +81,22 @@ Each record provides insights into key business metrics such as: *Order Date & S
 ## Defining Key Performance Indicators (KPIs)
 The following metrics were identified as essential Key Performance Indicators (KPIs) to provide the business user with insights into the effectiveness of each campaign, and  Identify opportunities for optimization:
 
-**Provided KPIs (Within the dataset)**
-- _Impressions_ – Daily impressions (times ad was shown to a viewer) for each ad
-- _CTR (%)_ - Daily average click-through rate for each ad
+**Provided KPIs (Available in the dataset)**
+- Total Orders: Number of units sold per order (Indicates product demand volume by segment or region.)
+- Total revenue: Total dollar value of products sold (Tracks gross revenue generation across categories, segments, and states).
+- Profit: Net earnings from product sales after cost deductions (Measures business profitability, helping to identify profitable or loss-making areas).
+- Discount: The percentage reduction offered on products sold (Helps assess discounting practices and their potential impact on profit margins).
+  
+**Computed KPIs (Created with DAX Measures in Power BI)**
+- Profit Margin (%): Profit as a percentage of sales (Measures efficiency and profitability across products and segments).
 
+Average Discount (%)
+Mean discount given across all transactions.
+Formula: AVERAGE([Discount])
+Insight: Flags over-discounting trends that may erode profits.
 
-**Additional(computed) KPIs.**
-- Total Engagement - _What is the overall level of user interaction or engagement with our Ads across different metrics (likes, shares, and comments)?_
-- Conversion rate (%) - _What percentage of ad viewers are converting into Paying customers?_
+These KPIs were used throughout the dashboard to enable interactive exploration and comparison across states, market segments, and product categories — supporting informed business decisions and targeted recommendations.
+
 
 ## Data Transformation/Preprocessing
 The dataset was imported into Power BI’s Power Query for data validation and cleaning.  The column profiling was changed from ‘based on Top 1000 rows’ to ‘based on entire dataset’. ‘Column quality’ and ‘Column distribution’ checkboxes were selected to get a summary information about each column for effective cleaning/Preprocessing. The data table was fairly clean and required minimal transformation, which was carried out as follows:
@@ -100,10 +108,19 @@ The dataset was a single table. This is shown in the image below:
 ![](Model.JPG)
 
 ## Data Exploration (EDA)
-With the data now transformed, it’s time to explore the data to analyze ?, in order to provide insights into ?, and Identify opportunities for profitability, in response to the Business need. 
+With the data now transformed and cleaned, I proceeded to explore it in order to:
+- Analyze sales performance, profitability, discount patterns, and order volume across product segments, categories, and geographic locations.
+- Provide insights into which product groups and customer segments drive or drain profit.
+- Identify opportunities to improve operational efficiency and maximize profitability, addressing the core business need of uncovering weak areas and guiding strategic decisions.
 
-I approached the analysis by .....
-The metrics were then .... the following DAX Measures were created:
+I approached the analysis with a structured, insight-driven workflow focused on uncovering profitability patterns and performance gaps across products, segments, and regions. Specifically, I:
+- Aggregated key metrics such as Total Sales, Total Profit, Profit Margin, Order Quantity, and Average Discount to assess performance at various business levels.
+- Evaluated profitability trends to identify underperforming product lines and states, with special attention to combinations of high discounts and low or negative profit margins.
+- Implemented interactive slicers in Power BI to enable dynamic filtering and drill-down by: Customer Segment, Product Category, State, and Region.
+
+This approach enabled a comprehensive and flexible exploration of the dataset, equipping business users with targeted insights for data-driven decision-making.
+The metrics were further refined through the creation of the following custom DAX measures in Power BI to enable more dynamic calculations and comparisons.
+
 ```
 Target profit Margin = 0.20
 ```
@@ -167,14 +184,29 @@ VAR _DataBar =
 ```
 With the measures for the metrics computed, it’s time to bring our analysis to life with visuals. 
 
-## KPI Visualization/Presentation (WIP)
+## KPI Visualization/Presentation
+To make the insights easily accessible and actionable, I designed the dashboard using a storytelling approach across two pages:
+# Product Performance Overview 
+We begin by establishing a baseline understanding of product and sales performance across customer segments, categories, and regions - _**what’s working and where do we stand?**_ 
+We observed, from interacting with the visual, that demand (order quantity) is highest in the Consumer segment, with the Technology category, generating the highest sales and profit across the business. This reveals a core strength worth reinforcing through marketing and product focus. We also see that some regions contribute positively to revenue but fall short on profit, which may be linked to either operational inefficiencies, customer preferences, or aggressive discounting in those markets.
+
+![](Capture 2.JPG)
+
+However, this isn’t the full picture. When we shift attention to profitability patterns, to uncover _**where we’re at risk, how discounting strategies impacts performance, and what needs attention**_, it becomes evident that high revenue doesn’t always equate to healthy profit margins. Certain product lines, like **Tables and Bookcases,** despite high order quantity, return little to no profit due to deep discounting. This signals potential issues with pricing strategy or over-reliance on promotions.
+Interestingly, while the Home-Office segment records the highest profit margin, it receives the fewest orders. This suggests an opportunity to scale, by increasing volume without sacrificing profitability.
+
+![](Capture3.JPG)
+
+Together, these insights point to a business that is growing, but not always efficiently. 
 
 ## Dashboard:
 Having analyzed and visualized the required KPIs, [the interactive dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTdjYzYzZmYtMjMwYS00OTgyLThjMTktZGIwNjA2MGVjOTQxIiwidCI6ImFiMTA0YzYwLTZkZTYtNDc1ZC1hMjBmLTg5M2Y2OWQ2NzlhNCJ9&embedImagePlaceholder=true&pageName=3ab929e1f4888cf87d7b), with Image shown below, was then designed with slicers, tooltips and bookmarks to enable the business user drill down and gain additional insights from the report. A brief video guide of the dashboard can also be accessed through this [link](https://lnkd.in/dyK2JhFX)
 
-![](Maketing_campaign_dashboard.JPG)
+
+
+
 
 ## Conclusion
 In Summary, 
 
-![](Thanks_img.jpeg)
+![](Thank_you.png)
