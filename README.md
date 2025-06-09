@@ -90,13 +90,7 @@ The following metrics were identified as essential Key Performance Indicators (K
 **Computed KPIs (Created with DAX Measures in Power BI)**
 - Profit Margin (%): Profit as a percentage of sales (Measures efficiency and profitability across products and segments).
 
-Average Discount (%)
-Mean discount given across all transactions.
-Formula: AVERAGE([Discount])
-Insight: Flags over-discounting trends that may erode profits.
-
 These KPIs were used throughout the dashboard to enable interactive exploration and comparison across states, market segments, and product categories — supporting informed business decisions and targeted recommendations.
-
 
 ## Data Transformation/Preprocessing
 The dataset was imported into Power BI’s Power Query for data validation and cleaning.  The column profiling was changed from ‘based on Top 1000 rows’ to ‘based on entire dataset’. ‘Column quality’ and ‘Column distribution’ checkboxes were selected to get a summary information about each column for effective cleaning/Preprocessing. The data table was fairly clean and required minimal transformation, which was carried out as follows:
@@ -104,7 +98,8 @@ The dataset was imported into Power BI’s Power Query for data validation and c
 - There were no missing values, empty cells or duplicates.
   
 ## Data Modelling
-The dataset was a single table. This is shown in the image below:
+The dataset was structured as a single flat table, containing all relevant fields needed for analysis. Since there were no relationships to define between multiple tables, there was no need for data modeling into a star or snowflake schema. This structure is shown in the image below:
+
 ![](Model.JPG)
 
 ## Data Exploration (EDA)
@@ -186,27 +181,46 @@ With the measures for the metrics computed, it’s time to bring our analysis to
 
 ## KPI Visualization/Presentation
 To make the insights easily accessible and actionable, I designed the dashboard using a storytelling approach across two pages:
-# Product Performance Overview 
+
+### Product Performance Overview 
 We begin by establishing a baseline understanding of product and sales performance across customer segments, categories, and regions - _**what’s working and where do we stand?**_ 
-We observed, from interacting with the visual, that demand (order quantity) is highest in the Consumer segment, with the Technology category, generating the highest sales and profit across the business. This reveals a core strength worth reinforcing through marketing and product focus. We also see that some regions contribute positively to revenue but fall short on profit, which may be linked to either operational inefficiencies, customer preferences, or aggressive discounting in those markets.
+We observed, from interacting with the visual, that the the highest demand (order quantity) is in the Consumer segment, with the Technology category, generating the highest sales and profit across the business. This reveals a core strength worth reinforcing through marketing and product focus. Interestingly, while the Home-Office segment records the highest profit margin, it receives the fewest orders. This suggests an opportunity to scale, by increasing volume without sacrificing profitability.
 
-![]([Capture 2].JPG)
+![]([Perf].JPG)
 
+### Profitability Risk Analysis
 However, this isn’t the full picture. When we shift attention to profitability patterns, to uncover _**where we’re at risk, how discounting strategies impacts performance, and what needs attention**_, it becomes evident that high revenue doesn’t always equate to healthy profit margins. Certain product lines, like **Tables and Bookcases,** despite high order quantity, return little to no profit due to deep discounting. This signals potential issues with pricing strategy or over-reliance on promotions.
-Interestingly, while the Home-Office segment records the highest profit margin, it receives the fewest orders. This suggests an opportunity to scale, by increasing volume without sacrificing profitability.
 
-![](Capture3.JPG)
+![](Discount_analysis.JPG)
 
 Together, these insights point to a business that is growing, but not always efficiently. 
 
 ## Dashboard:
 Having analyzed and visualized the required KPIs, [the interactive dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTdjYzYzZmYtMjMwYS00OTgyLThjMTktZGIwNjA2MGVjOTQxIiwidCI6ImFiMTA0YzYwLTZkZTYtNDc1ZC1hMjBmLTg5M2Y2OWQ2NzlhNCJ9&embedImagePlaceholder=true&pageName=3ab929e1f4888cf87d7b), with Image shown below, was then designed with slicers, tooltips and bookmarks to enable the business user drill down and gain additional insights from the report. A brief video guide of the dashboard can also be accessed through this [link](https://lnkd.in/dyK2JhFX)
 
+![](Dashboard.JPG)
 
+## Key Insightss
+The dashboard analysis yielded several important business insights:
 
+### High Performers:
+- The Consumer Segment and Technology Category had the highest overall revenue and profit contribution.
+- The Home Office Segment showed the highest profit margin (14.03%) despite having the lowest order volume.
 
+### Profit Leakage & Risks:
+- A significant number of least profitable products, such as Tables and Bookcases were associated with high average discounts.
+
+## Recommendations
+Based on the analysis, the following strategic actions are recommended:
+- Scale High-Performing Areas: Increase investments in the Consumer segment and Technology category through targeted promotions, bundled offerings, and wider product availability.
+- Leverage the Home Office Segment: Though order quantity is lowest, its profitability is highest. Efforts should focus on increasing sales volume while maintaining or improving the profit margin.
+Reevaluate Discounting Strategy: Implement a review process for discount approvals, especially for low-performing product lines where high discounts are hurting profit margins.
 
 ## Conclusion
-In Summary, 
+This project provided a data-driven overview of sales and profit performance across a fictitious US-based Superstore’s product segments, categories, and regions. The analysis identified top and bottom performers, profit risks tied to discounting, and under-leveraged segments with strong margin potential. With clear visualizations and actionable insights, the dashboard equips business leaders to:
+- Make informed product, pricing, and marketing decisions.
+- Improve profitability through optimized discounting.
+- Align regional strategies based on revenue and profit contribution.
+Future analysis opportunities include drilling deeper into customer behavior, time series trends, and integrating supply chain cost data for full profitability analysis.
 
 ![](Thank_you.png)
