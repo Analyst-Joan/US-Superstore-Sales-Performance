@@ -186,7 +186,7 @@ To make the insights easily accessible and actionable, I designed the dashboard 
 We begin by establishing a baseline understanding of product and sales performance across customer segments, categories, and regions - _**what’s working and where do we stand?**_ 
 We observed, from interacting with the visual, that the the highest demand (order quantity) is in the Consumer segment, with the Technology category, generating the highest sales and profit across the business. This reveals a core strength worth reinforcing through marketing and product focus. Interestingly, while the Home-Office segment records the highest profit margin, it receives the fewest orders. This suggests an opportunity to scale, by increasing volume without sacrificing profitability.
 
-![]([Perf.JPG)
+![](Perf.JPG)
 
 ### Profitability Risk Analysis
 However, this isn’t the full picture. When we shift attention to profitability patterns, to uncover _**where we’re at risk, how discounting strategies impacts performance, and what needs attention**_, it becomes evident that high discount doesn’t always equate to healthy profit margins. Certain product lines, like **Tables and Bookcases,** despite high order quantity, return little to no profit due to deep discounting. This signals potential issues with pricing strategy or over-reliance on promotions.
