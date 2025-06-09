@@ -5,7 +5,7 @@
 [Photo Credit](https://create.microsoft.com/en-us/features/ai-image-generator)
 
 ## Background
-As a Business Manager for a fictitious United States based Superstore, I conducted an Exploratory Data Analysis (EDA) on product performance data to uncover underperforming areas across states, market segments, and product categories. The goal was to identify key pain points and provide data-driven recommendations to improve sales, optimize product mix, and enhance regional strategies.
+As a Business Manager for a fictitious United States based Superstore, I conducted an Exploratory Data Analysis (EDA) on product performance data to uncover underperforming areas across Regions, market segments, and product categories. The goal was to identify weak areas and provide data-driven recommendations to improve sales, increase profit, and enhance regional strategies.
 
 ## Target Audience
 This project is designed to provide value to a range of business and data professionals. The insights and visualizations generated are relevant for decision-making, performance monitoring, and strategic planning across various roles:
@@ -43,14 +43,13 @@ The insights from this EDA serve strategic, operational, and tactical needs as o
 
 **5. Understand the Impact of Discounts and Order Volumes**
 - Analyze how average discount levels affect profitability across product categories.
-- Flag areas where excessive discounting leads to losses despite high sales volume.
+- Flag areas where excessive discounting leads to losses.
 
 **6. Optimize Shipping Mode and Logistics Strategy**
 - Assess how shipping mode (e.g., Standard, First Class) affects profit margins.
-- Reveal cost-heavy shipping patterns across regions and product segments.
 
 **7. Support Data-Driven Decision-Making**
-- Provide actionable insights to guide pricing, inventory, regional targeting, and logistics.
+- Provide actionable insights to guide pricing, regional targeting, and logistics.
 - Empower business managers to optimize strategies for profitability and growth.
 
  ## Key Questions Answered
@@ -58,12 +57,12 @@ The insights from this EDA serve strategic, operational, and tactical needs as o
 2. Which segments and product categories drive or drag performance?
 3. Which states or cities are underperforming or excelling?
 4. How do product sub-categories differ in terms of sales and profit?
-5. What are the risks of discounting or over-ordering on profitability?
-6. Which shipping modes affect cost efficiency?
-7. Which customer segment + shipping method combinations reduce profitability?
+5. What are the impacts of discounting on profitability?
+6. Which shipping modes is most utilised?
+7. What is the variance between actual and target profit margins across segments, categories and Regions?
 8. What are the most and least profitable products?
-9. Where are we losing money despite high product movement?
-10. How can shipping and pricing strategies be optimized by region or segment?
+9. Where are we losing money despite high order quantity/product movement?
+10. How can shipping and pricing strategies be optimized?
 
 ## Skills/Concepts applied
 -	Cleaning/Validation in Power Query
@@ -76,7 +75,7 @@ The insights from this EDA serve strategic, operational, and tactical needs as o
 
 ## About the Data
 The dataset comprises a single table with 9,994 rows and 13 columns, representing detailed product order and sales records from a fictitious U.S.-based Superstore. It includes transactional data across various: **States, Market segments (e.g., Consumer, Corporate, Home Office), Product categories and sub-categories.**
-Each record provides insights into key business metrics such as: *Order Date & Ship Date, Sales and Profit, Quantity and Discount, Customer and Region Details, Product Information.* The dataset was gotten from [The Spark Foundation_GRIP](https://bit.ly/3i4rbWl).  
+Each record provides insights into key business metrics such as: *Sales and Profit, Quantity and Discount, Region Details, Ship mode.* The dataset was gotten from [The Spark Foundation_GRIP](https://bit.ly/3i4rbWl).  
 
 ## Defining Key Performance Indicators (KPIs)
 The following metrics were identified as essential Key Performance Indicators (KPIs) to provide the business user with insights into the effectiveness of each campaign, and  Identify opportunities for optimization:
@@ -113,8 +112,7 @@ I approached the analysis with a structured, insight-driven workflow focused on 
 - Evaluated profitability trends to identify underperforming product lines and states, with special attention to combinations of high discounts and low or negative profit margins.
 - Implemented interactive slicers in Power BI to enable dynamic filtering and drill-down by: Customer Segment, Product Category, State, and Region.
 
-This approach enabled a comprehensive and flexible exploration of the dataset, equipping business users with targeted insights for data-driven decision-making.
-The metrics were further refined through the creation of the following custom DAX measures in Power BI to enable more dynamic calculations and comparisons.
+This approach enabled a comprehensive and flexible exploration of the dataset, equipping business users with targeted insights for data-driven decision-making. The metrics were further refined through the creation of the following custom DAX measures in Power BI to enable more dynamic calculations and comparisons.
 
 ```
 Target profit Margin = 0.20
@@ -214,10 +212,10 @@ The dashboard analysis yielded several important business insights:
 Based on the analysis, the following strategic actions are recommended:
 - Scale High-Performing Areas: Increase investments in the Consumer segment and Technology category through targeted promotions, bundled offerings, and wider product availability.
 - Leverage the Home Office Segment: Though order quantity is lowest, its profitability is highest. Efforts should focus on increasing sales volume while maintaining or improving the profit margin.
-Reevaluate Discounting Strategy: Implement a review process for discount approvals, especially for low-performing product lines where high discounts are hurting profit margins.
+- Reevaluate Discounting Strategy: Implement a review process for discount approvals, especially for low-performing product lines where high discounts are hurting profit margins.
 
 ## Conclusion
-This project provided a data-driven overview of sales and profit performance across a fictitious US-based Superstore’s product segments, categories, and regions. The analysis identified top and bottom performers, profit risks tied to discounting, and under-leveraged segments with strong margin potential. With clear visualizations and actionable insights, the dashboard equips business leaders to:
+This project provided a data-driven overview of sales and profit performance across a fictitious US-based Superstore’s product segments, categories, and regions. The analysis identified top and bottom performers, profit risks tied to discounting, and under-leveraged segments with strong profit margin potential. With clear visualizations and actionable insights, the dashboard equips business leaders to:
 - Make informed product, pricing, and marketing decisions.
 - Improve profitability through optimized discounting.
 - Align regional strategies based on revenue and profit contribution.
